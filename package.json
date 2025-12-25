@@ -1,14 +1,15 @@
 {
   "name": "assighment1",
   "version": "1.0.0",
-  "main": "hazem-mohamed_dokki-sun-wed1-4-offline_assighment1_01151602098_copy2.js",
+  "main": "hazem-mohamed_dokki-sun-wed1-4-offline_assighment1_01151602098_copy3.js",
   "scripts": {
-    "start:dev": "node --watch hazem-mohamed_dokki-sun-wed1-4-offline_assighment1_01151602098_copy2.js"
+    "start:dev": "node --watch hazem-mohamed_dokki-sun-wed1-4-offline_assighment1_01151602098_copy3.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mysql2": "^3.16.0"
   }
 }
