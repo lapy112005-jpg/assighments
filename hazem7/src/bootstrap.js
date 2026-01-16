@@ -10,6 +10,8 @@ import { commentModel } from "./DB/model/commentModel.js";
 
 
 
+
+
 async function bootstrap() {
   const app = express();
   app.use(express.json());
