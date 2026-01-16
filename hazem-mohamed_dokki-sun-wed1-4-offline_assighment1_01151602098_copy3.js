@@ -182,7 +182,7 @@ app.use(express.json());
 //question 16
 const grantDelete = `grant delete on store.products to 'manager'@'localhost'`
 db.execute(revokeUpdate , (err , result)=>{
-  if (err) {
+  if (err) { 
     console.log(err)
   }
   console.log(result)
