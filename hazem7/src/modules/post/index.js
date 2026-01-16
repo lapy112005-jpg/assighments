@@ -1,0 +1,1 @@
+export {default as postRouters} from "./postController.js"
