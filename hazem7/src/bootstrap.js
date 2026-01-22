@@ -30,6 +30,8 @@ async function bootstrap() {
     res.status(status).json({ err_msg: status==500? err.message :"somthing went wrong"  , stack:err.stack});
   });
 
+
+
   await checkConnection()
   await userModel.sync({force:false , alter:false})
   await postModel.sync()

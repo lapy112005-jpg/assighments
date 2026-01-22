@@ -1,0 +1,29 @@
+1- db.createCollection("books" , {validator:{title:{$type:"string"}}})
+2- db.authors.insertOne({name:"author 1" , nationality:jordon})
+3- db.createCollection("logs" , {capped:true , size:1048576 , max:})
+4- db.createIndexes({title:1})
+5- db.books.insertOne({title:"jzncsdj"})
+6- db.books.insertMany([{} , {} , {} ])
+7- db.logs.insertOne({date:"1-1-2004"})
+8- db.books.updateOne({title:"future"} , {$set:{year:2022}})
+9- db.books.find({title:"Brave new world"})
+10-db.books.find({$and:[{year:{$gt:1990}} , {year:{$lt:2010}}]})
+11-db.books.find({genre:"science fiction"})
+12-db.books.find({}).skip(2).limit(3).sort({year:-1})
+13-db.books.find({year:{$type:16}})
+14-db.books.find({genre:{nin:["horror" , "science fiction"]}})
+15-db.books.deleteMany({year:{$lt:2000}})
+16-db.books.aggregate([ {$match:{year:{$gt:2000}}}  , {$sort:{year:-1}}  ])
+17-db.books.aggregate([ {$match:{year:{$gt:2000}}} , {$projection:{title:1,author:1,year:1,_id:0}}  ])
+18-db.books.aggregate([{$unwind:"$genre"}])
+19-db.books.aggregate([
+    {
+        $lookup: {
+            from: "logs",          
+            localField: "_id",     
+            foreignField: "bookId",
+            as: "logs"             
+        }
+    }
+
+
