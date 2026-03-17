@@ -1,0 +1,14 @@
+{
+  "name": "hazem15",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "concurrently \"tsc -w \" \"node --watch dist/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
